@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alex's Recipe Site</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Basic Reset and Styling */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background: #fafafa;
+      color: #333;
+    }
+
+    header, footer {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .recipe-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .recipe-header img {
+      width: 250px;
+      border-radius: 10px;
+    }
+
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+
+    .ingredients, .steps, .nutrition {
+      margin-bottom: 30px;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    .nutrition dl {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e2e8f0;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      margin: 5px 5px 0 0;
+    }
+
+    hr {
+      margin: 50px 0;
+      border: none;
+      border-top: 2px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alex's Recipe Site</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Recipe_page.html">Recipes</a>
+      <a href="Blog_page.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Spaghetti Carbonara -->
+    <div class="recipe">
+      <div class="recipe-header">
+        <img src="Spaghetti_carbonara.jpg" alt="Spaghetti Carbonara">
+        <div>
+          <h2>Spaghetti Carbonara</h2>
+          <p><strong>Servings:</strong> 4–6 | <strong>Prep Time:</strong> 10 min | <strong>Cook Time:</strong> 20 min</p>
+          <div>
+            <span class="tag">Pasta</span>
+            <span class="tag">Italian</span>
+            <span class="tag">Dinner</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="ingredients">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>1 tbsp extra virgin olive oil or unsalted butter</li>
+          <li>1/2 lb pancetta or thick cut bacon, diced</li>
+          <li>1–2 garlic cloves, minced (optional)</li>
+          <li>3–4 whole eggs</li>
+          <li>1 cup grated Parmesan or Pecorino cheese</li>
+          <li>1 lb spaghetti (or bucatini/fettuccine)</li>
+          <li>Kosher salt and black pepper to taste</li>
+        </ul>
+      </section>
+
+      <section class="steps">
+        <h3>Instructions</h3>
+        <ol>
+          <li>Bring a large pot of salted water to a boil.</li>
+          <li>In a sauté pan over medium heat, cook pancetta or bacon until crispy. Add garlic (if using), sauté for 1 minute, then remove from heat.</li>
+          <li>In a small bowl, beat eggs and mix in half of the cheese.</li>
+          <li>Cook pasta until al dente. Reserve some pasta water, then drain.</li>
+          <li>Transfer hot pasta to the pancetta bowl. Toss well to coat evenly.</li>
+          <li>Quickly stir in egg mixture until creamy. Add pasta water if needed to loosen. Season with salt and pepper.</li>
+        </ol>
+      </section>
+
+      <section class="nutrition">
+        <h3>Nutrition Facts (per serving)</h3>
+        <dl>
+          <dt>Calories:</dt>
+          <dd>447</dd>
+          <dt>Total Fat:</dt>
+          <dd>31g (39% DV)</dd>
+          <dt>Saturated Fat:</dt>
+          <dd>11g (57% DV)</dd>
+          <dt>Cholesterol:</dt>
+          <dd>166mg (55% DV)</dd>
+          <dt>Sodium:</dt>
+          <dd>413mg (18% DV)</dd>
+          <dt>Carbs:</dt>
+          <dd>25g (9% DV)</dd>
+          <dt>Fiber:</dt>
+          <dd>1g (4% DV)</dd>
+          <dt>Sugar:</dt>
+          <dd>1g</dd>
+          <dt>Protein:</dt>
+          <dd>16g</dd>
+          <dt>Vitamin C:</dt>
+          <dd>0mg (1% DV)</dd>
+          <dt>Calcium:</dt>
+          <dd>171mg (13% DV)</dd>
+          <dt>Iron:</dt>
+          <dd>2mg (10% DV)</dd>
+          <dt>Potassium:</dt>
+          <dd>215mg (5% DV)</dd>
+        </dl>
+      </section>
+    </div>
+
+    <hr>
+
+    <!-- Vegetable Stir Fry -->
+    <div class="recipe">
+      <div class="recipe-header">
+        <img src="vegetable_stir_fry.jpg" alt="Vegetable Stir Fry">
+        <div>
+          <h2>Vegetable Stir Fry</h2>
+          <p><strong>Servings:</strong> 4 | <strong>Prep Time:</strong> 15 min | <strong>Cook Time:</strong> 10 min</p>
+          <div>
+            <span class="tag">Vegetarian</span>
+            <span class="tag">Asian</span>
+            <span class="tag">Quick & Easy</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="ingredients">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>1 tbsp olive oil</li>
+          <li>1 sliced red bell pepper</li>
+          <li>1 sliced yellow bell pepper</li>
+          <li>1 small sliced zucchini</li>
+          <li>1 cup sugar snap peas</li>
+          <li>1 cup sliced carrots</li>
+          <li>1 cup sliced mushrooms</li>
+          <li>2 cups broccoli</li>
+          <li>1 (15-ounce) can baby corn, drained</li>
+          <li>1 (8-ounce) can water chestnuts, drained</li>
+          <li>Green onions (for garnish)</li>
+          <li>Sesame seeds (for garnish)</li>
+        </ul>
+
+        <h4>Sauce</h4>
+        <ul>
+          <li>¼ cup soy sauce</li>
+          <li>3 garlic cloves, minced</li>
+          <li>3 tbsp brown sugar</li>
+          <li>1 tsp sesame oil</li>
+          <li>½ cup chicken broth</li>
+          <li>1 tbsp cornstarch</li>
+        </ul>
+      </section>
+
+      <section class="steps">
+        <h3>Instructions</h3>
+        <ol>
+          <li>Heat olive oil in a wok or large skillet over medium-high heat.</li>
+          <li>Add all vegetables. Cook for 2–3 minutes, stirring frequently.</li>
+          <li>In a small bowl, whisk together soy sauce, garlic, brown sugar, sesame oil, broth, and cornstarch.</li>
+          <li>Pour sauce over vegetables. Cook until sauce thickens and veggies are tender.</li>
+          <li>Garnish with green onions and sesame seeds before serving.</li>
+        </ol>
+      </section>
+
+      <section class="nutrition">
+        <h3>Nutrition Facts (per serving)</h3>
+        <dl>
+          <dt>Calories:</dt>
+          <dd>204</dd>
+          <dt>Carbohydrates:</dt>
+          <dd>39g</dd>
+          <dt>Protein:</dt>
+          <dd>7g</dd>
+          <dt>Fat:</dt>
+          <dd>5g</dd>
+          <dt>Saturated Fat:</dt>
+          <dd>1g</dd>
+          <dt>Polyunsaturated Fat:</dt>
+          <dd>1g</dd>
+          <dt>Monounsaturated Fat:</dt>
+          <dd>2g</dd>
+          <dt>Cholesterol:</dt>
+          <dd>0.4mg</dd>
+          <dt>Sodium:</dt>
+          <dd>649mg</dd>
+          <dt>Potassium:</dt>
+          <dd>642mg</dd>
+          <dt>Fiber:</dt>
+          <dd>6g</dd>
+          <dt>Sugar:</dt>
+          <dd>15g</dd>
+          <dt>Vitamin A:</dt>
+          <dd>4811 IU</dd>
+          <dt>Vitamin C:</dt>
+          <dd>108mg</dd>
+          <dt>Calcium:</dt>
+          <dd>50mg</dd>
+          <dt>Iron:</dt>
+          <dd>2mg</dd>
+        </dl>
+      </section>
+    </div>
+
+    <hr>
+
+    <!-- Good Old-Fashioned Pancakes -->
+    <div class="recipe">
+      <div class="recipe-header">
+        <img src="pancakes.jpg" alt="Good Old-Fashioned Pancakes">
+        <div>
+          <h2>Good Old-Fashioned Pancakes</h2>
+          <p><strong>Servings:</strong> 4 | <strong>Prep Time:</strong> 5 min | <strong>Cook Time:</strong> 10 min</p>
+          <div>
+            <span class="tag">Breakfast</span>
+            <span class="tag">American</span>
+            <span class="tag">Quick & Easy</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="ingredients">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>1 1/2 cups all-purpose flour</li>
+          <li>3 1/2 tsp baking powder</li>
+          <li>1 tsp salt</li>
+          <li>1 tbsp white sugar</li>
+          <li>1 1/4 cups milk</li>
+          <li>1 egg</li>
+          <li>3 tbsp butter, melted</li>
+          <li>1 tsp vanilla extract</li>
+        </ul>
+      </section>
+
+      <section class="steps">
+        <h3>Instructions</h3>
+        <ol>
+          <li>In a large bowl, whisk together the flour, baking powder, salt, and sugar.</li>
+          <li>Make a well in the center, then pour in the milk, egg, melted butter, and vanilla. Stir until smooth.</li>
+          <li>Heat a lightly oiled griddle or frying pan over medium-high heat.</li>
+          <li>Pour 1/4 cup of batter onto the griddle for each pancake.</li>
+          <li>Cook until bubbles form on the surface of the pancake, then flip and cook the other side until golden brown.</li>
+          <li>Serve hot with syrup or toppings of choice.</li>
+        </ol>
+      </section>
+
+      <section class="nutrition">
+        <h3>Nutrition Facts (per serving)</h3>
+        <dl>
+           <dt>Calories:</dt>
+		<dd>158</dd>
+		<dt>Total Fat:</dt>
+		<dd>6g (8% DV)</dd>
+		<dt>Saturated Fat:</dt>
+		<dd>3g (17% DV)</dd>
+		<dt>Cholesterol:</dt>
+		<dd>38mg (13% DV)</dd>
+		<dt>Sodium:</dt>
+		<dd>504mg (22% DV)</dd>
+		<dt>Carbohydrates:</dt>
+		<dd>22g (8% DV)</dd>
+		<dt>Dietary Fiber:</dt>
+		<dd>1g (2% DV)</dd>
+		<dt>Sugars:</dt>
+		<dd>4g</dd>
+		<dt>Protein:</dt>
+		<dd>5g (9% DV)</dd>
+		<dt>Vitamin C:</dt>
+		<dd>0mg (0% DV)</dd>
+		<dt>Calcium:</dt>
+		<dd>140mg (11% DV)</dd>
+		<dt>Iron:</dt>
+		<dd>1mg (8% DV)</dd>
+		<dt>Potassium:</dt>
+		<dd>92mg</dd>

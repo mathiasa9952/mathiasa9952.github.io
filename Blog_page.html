@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Alex's Recipe Site</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background: #fafafa;
+      color: #333;
+    }
+
+    header, footer {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      color: #2c3e50;
+    }
+
+    section.intro {
+      margin-bottom: 30px;
+    }
+
+    section.intro p {
+      font-size: 1.2em;
+      line-height: 1.8;
+    }
+
+    form {
+      display: grid;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 1em;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 150px;
+    }
+
+    button[type="submit"] {
+      background-color: #0077cc;
+      color: white;
+      padding: 12px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      padding: 20px;
+      background: #fff;
+      text-align: center;
+      color: #777;
+      font-size: 0.9em;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      main {
+        padding: 15px;
+      }
+
+      nav a {
+        font-size: 14px;
+      }
+
+      footer p {
+        font-size: 0.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Recipe_page.html">Recipes</a>
+      <a href="about_page.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+      <h2>Welcome to Alex's Recipe Site!</h2>
+      <p>Hi there! I'm Alex, the creator of this recipe site. My passion for cooking and sharing delicious meals with others is what inspired me to create this website. Whether you cook a lot or not in the kitchen, I hope you'll find something here to enjoy and try out!</p>
+      <p>Feel free to browse through the recipes, leave feedback, and share your thoughts. I'd love to hear from you!</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Alex's Recipe Site. All rights reserved.</p>
+  </footer>
+</body>
+</html>

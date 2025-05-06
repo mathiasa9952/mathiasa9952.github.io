@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Alex's Recipe Book</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background: #fafafa;
+      color: #333;
+    }
+
+    header, footer {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    .recipe-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .recipe-item {
+      width: 30%;
+      margin-bottom: 20px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      background-color: #fff;
+      padding: 15px;
+    }
+
+    .recipe-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .recipe-item a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .recipe-item a:hover {
+      background-color: #005fa3;
+    }
+
+    footer p {
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Recipe Book!</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Recipe_page.html">Recipes</a>
+      <a href="Blog_page.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Featured Recipes</h2>
+      <div class="recipe-list">
+        <div class="recipe-item">
+          <img src="Spaghetti_carbonara.jpg" alt="Spaghetti Carbonara">
+          <h3>Spaghetti Carbonara</h3>
+          <a href="spaghetti_carbonara_recipe.html">View Recipe</a>
+        </div>
+        <div class="recipe-item">
+          <img src="vegetable_stir_fry.jpg" alt="Vegetable Stir Fry">
+          <h3>Vegetable Stir Fry</h3>
+          <a href="vegetable_stir_fry_recipe.html">View Recipe</a>
+        </div>
+        <div class="recipe-item">
+          <img src="pancakes.jpg" alt="Classic Pancakes">
+          <h3>Classic Pancakes</h3>
+          <a href="pancakes_recipe.html">View Recipe</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Alex's Recipe Site</p>
+  </footer>
+</body>
+</html>
